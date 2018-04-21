@@ -153,6 +153,10 @@ typedef struct {
   UINT alpha_bits;
 } BIT_MASK <name="Bit Mask">;  
 
+uint IsPowerOfTwo( UINT x ) {
+    return x > 0 && (x & (x - 1)) == 0;
+}
+
 struct {
   UINT version <name="RSB Version">; // *.rsb file version
 
@@ -167,12 +171,15 @@ struct {
   */
 
   UINT width <name="Texture Width">; // texture width (128-2048), 2048 max resolution
-  UINT height <name="Texture Height">; // texture height (128-2048), 2048 max resolution 
-  if (version == 0)  {
-    UINT Palette <name="8BitImage">;  // 1 - additional 8-bit texture copy + palette
-    if (Palette == 0) {
-      BIT_MASK BitMask;  
-    }  
+  UINT height <name="Texture Height">; // texture height (128-2048), 2048 max resolution
+  local UINT bHasPalette = 0;
+  if(version == 1) {
+    if( IsPowerOfTwo(width) != 0 && IsPowerOfTwo(height) != 0 ) {
+        bHasPalette = 1;
+    }
+    if (bHasPalette == 1)  {
+          BIT_MASK BitMask;  
+    }
   }
   else {
     if (version > 7) { 
@@ -201,8 +208,8 @@ typedef struct{
   ubyte Alpha   <name="Alpha">; 
 } PALETTE_COLOR <name="Palette Color">;
 
-if (HEADER.version == 0) {
-  if (HEADER.Palette == 1) {   
+if (HEADER.version == 1) {
+  if (HEADER.bHasPalette == 1) {   
     PALETTE_COLOR palette[256] <name="8-bit Palette">;
   };
 };
