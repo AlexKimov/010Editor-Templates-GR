@@ -11,16 +11,18 @@
 | №     | Game | Platform | Year | Formats |
 | :--- | :-- | :------ | :------ | :------ |
 | 1 | Rainbow six Lockdown | PC | 2005 | .rsb |
-| 2 | Ghost Recon 2 | XBOX | 2004  | .xpr |
-| 3 | Tom Clancy's Ghost Recon Island Thunder | XBOX | 2002  | .rsb |
-| 4 | The Sum of All Fears | PC  |2002 | .chr, .map, .pob, .qob, .rsb, .anm, .bnf  |
-| 5 | Ghost Recon (Desert Siege, Island Thunder) | PC |2001 - 2003 | .chr, .map, .pob, .qob, .rsb, .anm, .bnf  |
-| 6 | Freedom First Resistance  | PC | 2000  | .rsb, .map |
-| 7 | Rogue Spear | PC |1999 - 2001  | .rsb, .map, .sob, .rob, .qob |
-| 8 | Shadow Watch  | PC | 2000  | .r16  |
-| 9 | Force 21  | PC | 1999  | .rsb  |
-| 10 | Dominant Species  |  PC | 1998 | .rsb, .crp, .cmf  |
-| 11 | Rainbow six | PC | 1998 |  .rsb, .crp, .skl, .sob, .bcl, .map, .dam  |
+| 2 | Ghost Recon 2 Summit Strike | XBOX | 2005  | .xpr |
+| 3 | Ghost Recon 2 | XBOX | 2004  | .xpr |
+| 4 | Tom Clancy's Ghost Recon Island Thunder | XBOX | 2002  | .rsb |
+| 5 | Tom Clancy's Ghost Recon | PS2 | 2002  | .rsb |
+| 6 | The Sum of All Fears | PC  |2002 | .chr, .map, .pob, .qob, .rsb, .anm, .bnf  |
+| 7 | Ghost Recon (Desert Siege, Island Thunder) | PC |2001 - 2003 | .chr, .map, .pob, .qob, .rsb, .anm, .bnf  |
+| 8 | Freedom First Resistance  | PC | 2000  | .rsb, .map |
+| 9 | Rogue Spear | PC |1999 - 2001  | .rsb, .map, .sob, .rob, .qob |
+| 10 | Shadow Watch  | PC | 2000  | .r16  |
+| 11 | Force 21  | PC | 1999  | .rsb  |
+| 12 | Dominant Species  |  PC | 1998 | .rsb, .crp, .cmf  |
+| 13 | Rainbow six | PC | 1998 |  .rsb, .crp, .skl, .sob, .bcl, .map, .dam  |
 
 ## Available file templates (wip)
 
@@ -42,6 +44,7 @@
 | 14 | .r16       | R16.bt        | **85%**      | yes          | Texture file |
 | 15 | .rob       | ROB.bt        | **70%**      | yes          | 3D objects |
 | 16 | .rsb       | RSB.bt        | **95%**      | yes          | Texture file |
+| 16 | .rsb       | RSB(ps2).bt        | **5%**      | yes          | Texture file |
 | 17 | .skl       | SKL.bt        | **10%**      | yes          | Skeletal animation data |
 | 18 | .sob       | SOB.bt        | **40%**      | yes          | Static 3D objects |
 | 20 | .sht       | SHT.bt        | **0%**       | wip          | Collision data |
